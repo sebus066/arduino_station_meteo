@@ -1,5 +1,5 @@
 // station meteo version 2.2
-// inclus l'utilusation de capteur dht 22
+// inclus l'utilisation de capteur dht 22
 // Connect  BMP sensor en 3.3V (pas 5.0V!)
 // Connect GND sur Ground
 
