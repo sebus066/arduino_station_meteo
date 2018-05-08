@@ -1,4 +1,5 @@
-
+// station meteo version 2.2
+// inclus l'utilusation de capteur dht 22
 // Connect  BMP sensor en 3.3V (pas 5.0V!)
 // Connect GND sur Ground
 
@@ -110,7 +111,7 @@ for (byte b=0; b <= 29; b++) // boucle de 30 mesures pour ensuite test alarme à
 
 float mesure =(( z + cor ) / 100 ); 
       
-      Serial.print(" Pression Atmospherieque ");
+      Serial.print(" Pression Atmospherique ");
       
       Serial.print(mesure);
       
@@ -124,25 +125,26 @@ float mesure =(( z + cor ) / 100 );
 
       lcd.clear(); 
       
-      lcd.setCursor(3,0);
+      lcd.setCursor(1,0);
       
-      lcd.print("Pression  Atmos");
+      lcd.print("Pression ");
       
-      lcd.setCursor(5,1);
+      lcd.setCursor(10,0);
       
       lcd.print( mesure);
 
       lcd.print(" hP");
       
-      lcd.setCursor(4,2);
+      lcd.setCursor(1,1);
       
-      lcd.print("Temperature");
+      lcd.print("Temp EXT ");
 
-      lcd.setCursor(4,3);
+      lcd.setCursor(11,1);
 
       lcd.print(bmp.readTemperature());
-
-      lcd.print(" Degres");
+      lcd.print(" ");
+      lcd.print((char)223);
+      lcd.print("C");
 
 
       delay(60000); // pour avoir une mesure de pression par minute
