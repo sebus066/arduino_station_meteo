@@ -218,7 +218,7 @@ void loop() {
     
 
 
-    delay(4000); // pour avoir une mesure de pression par minute
+    delay(60000); // pour avoir une mesure de pression par minute
 
   }
 
