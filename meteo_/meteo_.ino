@@ -147,7 +147,7 @@ void loop() {
 
     Serial.print(" Hectopascal     ");
 
-    Serial.print(" Température Exterieure: ");
+    Serial.print(" Température Interieure: ");
 
     Serial.print(bmp.readTemperature());
 
@@ -159,7 +159,7 @@ void loop() {
     
     Serial.print("%    ");
 
-    Serial.print(" Temperature Interieure: ");
+    Serial.print(" Temperature Exterieure: ");
     
     Serial.print(dht.readTemperature());
 
@@ -180,7 +180,7 @@ void loop() {
 
     lcd.setCursor(1, 1);
 
-    lcd.print("Temp EXT ");
+    lcd.print("Temp INT ");
 
     lcd.setCursor(11, 1);
 
@@ -194,7 +194,7 @@ void loop() {
 
     lcd.setCursor(1, 2);
 
-    lcd.print("Temp INT ");
+    lcd.print("Temp EXT ");
     
     lcd.setCursor(11, 2);
 
